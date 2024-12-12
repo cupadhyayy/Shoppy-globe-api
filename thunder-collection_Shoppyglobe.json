@@ -1,0 +1,183 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Shoppyglobe",
+    "collectionId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+    "dateExported": "2024-12-10T20:47:09.867Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "300d1aa3-fe34-41e0-9ccc-dd96e84217fe",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Product By Id",
+            "url": "http://localhost:3000/api/products/6758790931305d2d7189eb3f",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-12-10T18:08:05.597Z",
+            "modified": "2024-12-10T18:22:01.438Z",
+            "headers": []
+        },
+        {
+            "_id": "a07f1b79-a622-4ade-bd04-e440e9dcb6a6",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "All Products",
+            "url": "http://localhost:3000/api/products/all-products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-12-10T18:08:12.979Z",
+            "modified": "2024-12-10T18:35:52.463Z",
+            "headers": []
+        },
+        {
+            "_id": "b9072bdc-fd2d-4d83-af8d-731b628e1c98",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Add Product",
+            "url": "http://localhost:3000/api/products/add",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-12-10T18:08:17.692Z",
+            "modified": "2024-12-10T19:53:51.624Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Calvin Klein CK One\",\n  \"price\": 90,\n  \"description\": \"CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.\",\n  \"stock\": 1\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "c2af3791-18f5-4f42-9350-6378bc10ff9a",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Add Cart",
+            "url": "http://localhost:3000/api/cart",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-12-10T18:20:32.543Z",
+            "modified": "2024-12-10T20:01:20.497Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productId\": \"67589bee72a44d97e2a06174\",\n  \"quantity\": 15\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTg5YmM2NzJhNDRkOTdlMmEwNjE3MSIsImlhdCI6MTczMzg2MDMwNCwiZXhwIjoxNzMzODYzOTA0fQ.BR1JZjXY_8eYpJFEGZYgOdPvtuVgFzp9EqgqLrGB_3c"
+            }
+        },
+        {
+            "_id": "a33d920f-7023-4dd0-b5e1-2b766b6c5f0d",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-12-10T18:36:45.409Z",
+            "modified": "2024-12-10T19:51:35.073Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"example\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test123\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "4ed6a6fa-a979-4eaa-bbce-e18bf4e6f9e0",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-12-10T18:37:35.859Z",
+            "modified": "2024-12-10T19:51:19.816Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test123\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "372fe009-3fca-414f-ae2c-0cf4f545ff6d",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Get Cart item",
+            "url": "http://localhost:3000/api/cart/67589bc672a44d97e2a06171",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-12-10T18:55:53.361Z",
+            "modified": "2024-12-10T19:55:22.474Z",
+            "headers": [
+                {
+                    "name": "Bearer",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTg5YmM2NzJhNDRkOTdlMmEwNjE3MSIsImlhdCI6MTczMzg2MDMwNCwiZXhwIjoxNzMzODYzOTA0fQ.BR1JZjXY_8eYpJFEGZYgOdPvtuVgFzp9EqgqLrGB_3c"
+            }
+        },
+        {
+            "_id": "80ee2563-d8ef-455f-a2c1-5b62a60d18a9",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "User Profile",
+            "url": "http://localhost:3000/api/auth/profile",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-12-10T19:19:14.336Z",
+            "modified": "2024-12-10T19:55:16.060Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"test123\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTg5YmM2NzJhNDRkOTdlMmEwNjE3MSIsImlhdCI6MTczMzg2MDMwNCwiZXhwIjoxNzMzODYzOTA0fQ.BR1JZjXY_8eYpJFEGZYgOdPvtuVgFzp9EqgqLrGB_3c"
+            }
+        },
+        {
+            "_id": "d7ef5d35-2959-4d26-8cdd-ccd291a4637b",
+            "colId": "2a3852a8-8585-4171-81ac-ceab6888bf00",
+            "containerId": "",
+            "name": "Update quanity in cart",
+            "url": "http://localhost:3000/api/cart/67589c3d72a44d97e2a06178",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-12-10T18:59:30.225Z",
+            "modified": "2024-12-10T20:11:18.958Z",
+            "headers": [
+                {
+                    "name": "Bearer",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"quantity\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTg5YmM2NzJhNDRkOTdlMmEwNjE3MSIsImlhdCI6MTczMzg2MDMwNCwiZXhwIjoxNzMzODYzOTA0fQ.BR1JZjXY_8eYpJFEGZYgOdPvtuVgFzp9EqgqLrGB_3c"
+            }
+        }
+    ],
+    "ref": "zK8GupJFycZF4DiYjvReu6B-2777J6bknFlMpHRGBsfl4NXWAtIX2sNj83oNeWXIq2fQuBC_DLnu3vYdhZNpAg"
+}
