@@ -43,5 +43,5 @@ Connected to MongoDB
 Then open example:- if you have an API endpoint like http://localhost:3000/api/products/6758790931305d2d7189eb3f, enter this URL in your browser to see the response.
 
 **Github Link**
-GitHub repository containing the project ( ) 
+GitHub repository containing the project ( https://github.com/cupadhyayy/Shoppy-globe-api.git) 
  
